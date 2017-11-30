@@ -4,7 +4,6 @@ import { Provider } from "react-redux";
 
 import "semantic-ui-css/semantic.css";
 
-import registerServiceWorker from "./registerServiceWorker";
 import configureStore from "./store/configureStore";
 
 const store = configureStore();
@@ -37,5 +36,3 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 render();
-
-registerServiceWorker();
