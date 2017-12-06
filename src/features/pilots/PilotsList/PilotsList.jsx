@@ -8,9 +8,7 @@ class PilotsList extends Component {
 	render() {
 		const { pilots } = this.props;
 
-		const pilotRows = pilots.map(pilot => {
-			return <PilotsListRow pilot={pilot} key={pilot.name} />;
-		});
+		const pilotRows = pilots.map(pilot => <PilotsListRow pilot={pilot} key={pilot.name} />);
 
 		return (
 			<Table celled>
